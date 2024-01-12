@@ -62,5 +62,10 @@ button:hover {
     display: none;
   }
   #info1, #info2 {
-    display: none;
+    visibility:hidden;
+    justify-content: center;
+    padding: 10px;
+    background-color: #2b297e;
+    color: white;
+    border: none;
   }

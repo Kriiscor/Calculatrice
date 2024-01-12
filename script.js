@@ -4,6 +4,7 @@
     let hideLink = document.querySelector('#hideCalculator');
     let operation = document.querySelector('.operation');
     let nombres = document.querySelector('.nombres');
+    let nombres2 = document.querySelector('.nombres2');
     let info1 = document.querySelector('#info1');
     let info2 = document.querySelector('#info2');
 
@@ -61,17 +62,22 @@
         calculatorForm.style.display = 'none';
     });
     nombres.addEventListener('mouseenter', function(){
-        info2.style.display= 'flex' ;
+        info2.style.visibility= 'visible' ;
     });
     nombres.addEventListener('mouseleave', function(){
-        info2.style.display= 'none' ;
+        info2.style.visibility= 'hidden' ;
     });
-
+    nombres2.addEventListener('mouseenter', function(){
+        info2.style.visibility= 'visible' ;
+    });
+    nombres2.addEventListener('mouseleave', function(){
+        info2.style.visibility= 'hidden' ;
+    });
     operation.addEventListener('mouseenter', function(){
-        info1.style.display= 'flex' ;
+        info1.style.visibility= 'visible' ;
     });
     operation.addEventListener('mouseleave', function(){
-        info1.style.display= 'none' ;
+        info1.style.visibility= 'hidden' ;
     });
 
 
